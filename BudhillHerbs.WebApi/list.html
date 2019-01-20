@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Budhill Herbs List Page</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <table class="container">
+        <tr class="topMenu">
+            <td colspan="2">
+
+                <ul class="menuIcons">
+                    <li>
+                        <div class="dropdown">
+                            <img class="menuIcons" src="images/icons/prep.png" alt="Dropper Icon">
+                            <div class="dropdown-content">
+                                <table class="iconDisplay">
+                                    <tr>
+                                        <td><img src="images/icons/tentures1.png" alt="Dropper Bottle" /></td>
+                                        <td><img src="images/icons/oildrop.png" alt="Oil Drop" /></td>
+                                        <td><img src="images/icons/vinegar.png" alt="Vinegar Decanter" /></td>
+                                        <td><img src="images/icons/valueadded.png" alt="Value Added" /></td>
+                                    </tr>
+                                    <tr class="text-row">
+                                        <td><a href="#">Tinctures</a></td>
+                                        <td><a href="#">Oils</a></td>
+                                        <td><a href="#">Vinegars</a></td>
+                                        <td><a href="#">Value Added</a></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                       
+                        <div class="dropdown">
+                            <img class="menuIcons" src="images/icons/storage.png" alt="Warehouse Icon">
+                            <div class="dropdown-content">
+                                <table class="iconDisplay">
+                                    <tr>
+                                        <td><img src="images/icons/house.png" alt="Dropper Bottle" /></td>
+                                        <td><img src="images/icons/oildrop.png" alt="Oil Drop" /></td>
+                                        <td><img class="dropdown-foxhole-img" src="images/icons/minibar.png" alt="Mini Fridge" /></td>
+                                        <td><img src="images/icons/knothole.png" alt="Dropper Bottle" /></td>
+                                        <td><img src="images/icons/pantry.png" alt="Dropper Bottle" /></td>
+                                        <td><img src="images/icons/cubbyhole.png" alt="Dropper Bottle" /></td>
+                                        <td><img src="images/icons/warehouse.png" alt="Dropper Bottle" /></td>
+                                    </tr>
+                                    <tr class="text-row">
+                                        <td><a href="#">Cave</a></td>
+                                        <td><a href="#">Cellar</a></td>
+                                        <td>
+                                            <div class="dropdown-foxhole">
+                                                <a href="#">Foxhole</a>
+                                                <div class="dropdown-foxhole-content">
+                                                    <table class="iconDisplay">
+                                                        <tr>
+                                                            <td><img src="images/icons/one.png" alt="Dropper Bottle" /></td>
+                                                            <td><img src="images/icons/two.png" alt="Dropper Bottle" /></td>
+                                                            <td><img src="images/icons/three.png" alt="Dropper Bottle" /></td>
+                                                            <td><img src="images/icons/four.png" alt="Dropper Bottle" /></td>
+                                                            <td><img src="images/icons/five.png" alt="Dropper Bottle" /></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><a href="#">Knothole</a></td>
+                                        <td><a href="#">Pantry</a></td>
+                                        <td><a href="#">Cubbyhole</a></td>
+                                        <td><a href="#">Warehouse</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li><img src="images/icons/supplies.png" alt="Cart Icon"></li>
+                    <li><img src="images/icons/logbook.png" alt="Log Icon"></li>
+                    <li><img src="images/icons/herb.png" alt="Herb Icon"></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="contentLeft">
+                <div class="header"><form class="searchLeft"><input type="text" name="search" placeholder="Search"></form>Tinctures</div>
+                
+
+
+            <table id="tincturesList" class="mainList">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Lot ID</th>
+                    <th>Date In</th>
+                    <th>Total Ounces</th>
+                    <th></th>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

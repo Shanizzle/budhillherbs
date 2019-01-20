@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Budhill Herbs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<table class="container">
+    <tr class="topMenu">
+        <td colspan="2">
+
+            <ul class="menuIcons">
+                <li>
+                    <div class="dropdown">
+                        <img class="menuIcons" src="images/icons/prep.png" alt="Dropper Icon">
+                        <div class="dropdown-content">
+                            <table class="iconDisplay">
+                                <tr>
+                                    <td><a href="list.html"><img src="images/icons/tentures1.png" alt="Dropper Bottle" /></a></td>
+                                    <td><img src="images/icons/oildrop.png" alt="Oil Drop" /></td>
+                                    <td><img src="images/icons/vinegar.png" alt="Vinegar Decanter" /></td>
+                                    <td><img src="images/icons/valueadded.png" alt="Value Added" /></td>
+                                </tr>
+                                <tr class="text-row">
+                                    <td><a href="#">Tinctures</a></td>
+                                    <td><a href="#">Oils</a></td>
+                                    <td><a href="#">Vinegars</a></td>
+                                    <td><a href="#">Value Added</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <img class="menuIcons" src="images/icons/storage.png" alt="Warehouse Icon">
+                        <div class="dropdown-content">
+                            <table class="iconDisplay">
+                                <tr>
+                                    <td><img src="images/icons/house.png" alt="Dropper Bottle" /></td>
+                                    <td><img src="images/icons/cellar.png" alt="Cellar" /></td>
+                                    <td><img class="dropdown-foxhole-img" src="images/icons/frige.png" alt="Fridge" /></td>
+                                    <td><img src="images/icons/washmachine.png" alt="Washing Machine" /></td>
+                                    <td><img src="images/icons/shelf.png" alt="Bottles on Shelf" /></td>
+                                    <td><img src="images/icons/wardrobe.png" alt="Dropper Bottle" /></td>
+                                    <td><img src="images/icons/warehouse.png" alt="Dropper Bottle" /></td>
+                                </tr>
+                                <tr class="text-row">
+                                    <td><a href="#">Cave</a></td>
+                                    <td><a href="#">Cellar</a></td>
+                                    <td>
+                                        <div class="dropdown-foxhole">
+                                            <a href="#">Foxhole</a>
+                                            <div class="dropdown-foxhole-content">
+                                                <table class="iconDisplay">
+                                                    <tr>
+                                                        <td><img src="images/icons/one.png" alt="Dropper Bottle" /></td>
+                                                        <td><img src="images/icons/two.png" alt="Dropper Bottle" /></td>
+                                                        <td><img src="images/icons/three.png" alt="Dropper Bottle" /></td>
+                                                        <td><img src="images/icons/four.png" alt="Dropper Bottle" /></td>
+                                                        <td><img src="images/icons/five.png" alt="Dropper Bottle" /></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><a href="#">Knothole</a></td>
+                                    <td><a href="#">Pantry</a></td>
+                                    <td><a href="#">Cubbyhole</a></td>
+                                    <td><a href="#">Warehouse</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                     </div>
+                </li>
+                <li><img src="images/icons/supplies.png" alt="Cart Icon"></li>
+                <li><img src="images/icons/logbook.png" alt="Log Icon"></li>
+                <li><img src="images/icons/herb.png" alt="Herb Icon"></li>
+            </ul>
+         </td>
+     </tr>
+    <tr>
+        <td class="contentLeft">
+            <div class="header">Daily Tasks</div>  
+            <table id="dailyTasks" class="mainList">
+                <tr>
+                    <th>Type</th>
+                    <th>Task</th>
+                    <th>Ready Date</th>
+                    <th></th>
+                </tr>
+               
+            </table>
+        </td>
+        
+        <td class="contentRight">
+            <div class="header">Summary</div>
+            <table class="summaryList">
+                <tr>
+                    <th colspan="3">Tinctures:</th>
+                    <td class="boldText">200oz</td>
+                </tr>
+                <tr>    
+                    <td></td>
+                    <td colspan="2"><i class="fas fa-leaf"></i>Maserating</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-warehouse"></i>Storage</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+                <tr>    
+                    <td></td>
+                    <td></td>                               
+                    <td>Cave 1</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td> 
+                    <td></td>
+                    <td>Cave 2</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+
+                <tr>
+                    <th colspan="3">Oils:</th>
+                    <td class="boldText">200oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-leaf"></i>Maserating</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-warehouse"></i>Storage</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+                <tr>    
+                    <td></td>
+                    <td></td>                               
+                    <td>Cave 1</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td> 
+                    <td></td>
+                    <td>Cave 2</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Vinegars:</th>
+                    <td class="boldText">200oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-leaf"></i>Maserating</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-warehouse"></i>Storage</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+                <tr>    
+                    <td></td>
+                    <td></td>                               
+                    <td>Cave 1</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td> 
+                    <td></td>
+                    <td>Cave 2</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Value Added:</th>
+                    <td class="boldText">200oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-bong"></i>Product on hand</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td>                             
+                    <td colspan="2"><i class="fas fa-warehouse"></i>Storage</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+                <tr>    
+                    <td></td>
+                    <td></td>                               
+                    <td>Cave 1</td>
+                    <td class="summaryTotal">150oz</td>
+                </tr>
+                <tr>    
+                    <td></td> 
+                    <td></td>
+                    <td>Cave 2</td>
+                    <td class="summaryTotal">50oz</td>
+                </tr>
+            </table>
+            <!-- add a table here           
+            <!-- or add a div and  ul list -->
+            
+        </td>
+    </tr>
+</table>
+
+    
+</body>
+</html>
